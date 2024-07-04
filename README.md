@@ -1,5 +1,3 @@
-# Community-FL
-
 # Proof of Concept: A Community-Based Collaborative Federated Learning Development and Automation Framework
 
 ## Architecture
