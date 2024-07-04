@@ -1,5 +1,5 @@
 clients: []
-communication_server_ip: http://145.100.135.12
+communication_server_ip: http://145.100.135.10
 mode_aggregation: aggregation
 mode_initialization: initialization
 discover_clients_script:
@@ -9,4 +9,4 @@ random_client_generator_script:
   class: File
   path: random_client.py
 round: "0"
-rounds: 2
+rounds: 12
