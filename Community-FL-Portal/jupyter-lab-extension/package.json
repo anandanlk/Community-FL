@@ -1,0 +1,26 @@
+{
+  "name": "communityfl",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "jupyter labextension build ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "JupyterLab extension to add a launcher button to open the Community FL Portal",
+  "devDependencies": {
+    "@jupyterlab/builder": "^4.2.3",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^4.2.3",
+    "@jupyterlab/launcher": "^4.2.3"
+  },
+  "jupyterlab": {
+    "extension": true
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}

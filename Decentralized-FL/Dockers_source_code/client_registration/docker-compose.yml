@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  client_register:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: client_register
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    volumes:
+      - "./:/register/files"
+    restart: always

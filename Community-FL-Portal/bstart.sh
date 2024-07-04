@@ -1,0 +1,1 @@
+cd backend && uvicorn index:app --port 8088 --reload

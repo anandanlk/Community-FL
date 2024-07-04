@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Build artifacts
+lib/
+static/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# JupyterLab specific
+*.pyc
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# MacOS specific
+.DS_Store
