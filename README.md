@@ -39,7 +39,7 @@ The bstart and fstart can be used to start the backend and frontend servers loca
 
 Note: If you building your own docker container, Buildx tool can be used to build images for both x86 and arm based archotecture and to push it to the dockerhub.
 
-# II. Services and Docker Containers to run Decentralized FL Training.
+# II. Services to run Decentralized FL Training.
 
 > **_Please note:_** This project utilizes Federated Learning source code based on the repository mentioned in the Acknowledgments section.
 
