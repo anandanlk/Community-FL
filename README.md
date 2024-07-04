@@ -1,7 +1,5 @@
 # Community-FL
 
-Community-FL Portal and Services for FL Training
-
 # Proof of Concept: A Community-Based Collaborative Federated Learning Development and Automation Framework
 
 ## Architecture
@@ -43,7 +41,7 @@ The bstart and fstart can be used to start the backend and frontend servers loca
 
 Note: If you building your own docker container, Buildx tool can be used to build images for both x86 and arm based archotecture and to push it to the dockerhub.
 
-II. Services and Docker Containers to run Decentralized FL Training.
+# II. Services and Docker Containers to run Decentralized FL Training.
 
 > **_Please note:_** This project utilizes Federated Learning source code based on the repository mentioned in the Acknowledgments section.
 
@@ -70,7 +68,15 @@ II. Services and Docker Containers to run Decentralized FL Training.
 
 Note: If you building your own docker container, Buildx tool can be used to build images for both x86 and arm based archotecture and to push it to the dockerhub.
 
-Experiment Instructions:
+## Acknowledgements
+
+This project uses code from the following sources:
+
+- A Kontomaris, Chronis (2023) CWL-FLOps: A Novel Method for Federated Learning Operations at Scale [https://github.com/CWL-FLOps/DecentralizedFL-CWL]
+
+- Shaoxiong Ji. (2018, March 30). A PyTorch Implementation of Federated Learning. Zenodo. [http://doi.org/10.5281/zenodo.4321561](http://doi.org/10.5281/zenodo.4321561)
+
+# III. Experiment Instructions:
 
 1. Launch Jupyter Lab and Click Community FL Add on
 2. Register in the portal (Create all types of users)
@@ -79,11 +85,3 @@ Experiment Instructions:
 5. Use the downloaded reserved_clients.json file in the Decentralized-FL\CWL_Workflow\find_clients_updated.py
 6. Ensure you installed 'cwltool==3.1.20230127121939' and Initiate the CWL Training using the command 'time cwltool --enable-ext --parallel decentralizedFL.cwl decentralized_input.yml '
 7. Unreserve the reserved clients in the portal.
-
-## Acknowledgements
-
-This project uses code from the following sources:
-
-- A Kontomaris, Chronis (2023) CWL-FLOps: A Novel Method for Federated Learning Operations at Scale [https://github.com/CWL-FLOps/DecentralizedFL-CWL]
-
-- Shaoxiong Ji. (2018, March 30). A PyTorch Implementation of Federated Learning. Zenodo. [http://doi.org/10.5281/zenodo.4321561](http://doi.org/10.5281/zenodo.4321561)
