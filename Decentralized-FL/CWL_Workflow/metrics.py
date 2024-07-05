@@ -51,11 +51,9 @@ def main(foldername):
     os.makedirs(output_dir, exist_ok=True)
     output_log_path = os.path.join(output_dir, "output.log")
 
-    # Run the command and save the output
     command = "{{ time cwltool --enable-ext --parallel decentralizedFL.cwl decentralized_input.yml; }} > {} 2>&1 2>> {}".format(output_log_path, output_log_path)
     subprocess.run(command, shell=True)
 
-    # Read the output log file
     with open(output_log_path, "r") as output_file:
         logs = output_file.read()
 
@@ -65,7 +63,6 @@ def main(foldername):
     df = pd.DataFrame(metrics)
     print(df)
 
-    # Save metrics to metrics.txt in the same directory
     metrics_file_path = os.path.join(output_dir, "metrics.txt")
     with open(metrics_file_path, "w") as metrics_file:
         metrics_file.write(f"Total_Time: {total_time}\n")
@@ -73,7 +70,7 @@ def main(foldername):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python metrics.py <foldername>")
+        print("Usage: python metrics.py <Results folder name>")
         sys.exit(1)
 
     foldername = sys.argv[1]
