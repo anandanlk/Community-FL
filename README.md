@@ -83,3 +83,5 @@ This project uses code from the following sources:
 5. Use the downloaded reserved_clients.json file in the Decentralized-FL\CWL_Workflow\find_clients_updated.py
 6. Ensure you installed 'cwltool==3.1.20230127121939' and Initiate the CWL Training using the command 'time cwltool --enable-ext --parallel decentralizedFL.cwl decentralized_input.yml '
 7. Unreserve the reserved clients in the portal.
+
+Demo Video: https://github.com/anandanlk/Community-FL/releases/download/v1.0.0/Community-based.FL.Demo.mp4
