@@ -3,6 +3,7 @@ import json
 import time
 import pathlib
 import os
+import random
 from get_system_config import get_system_info_list
 
 DISCOVERY_SERVER_URL = os.getenv('COMMUNICATION_IP', 'http://localhost') + ':8088'
@@ -18,7 +19,9 @@ host_directory = f'{directory}/files'
 weights_file = next((f for f in os.listdir(f'{host_directory}/') if f.endswith('.pt')), None)
 
 if weights_file is None:
-    weights_file = 'client.pt'
+    current_time = time.strftime("%Y%m%d_%H%M%S")
+    random_number = random.randint(1000, 9999)
+    weights_file = f'client_{random_number}_{current_time}.pt'
     with open(f'{host_directory}/{weights_file}', 'w') as f:
         pass
 
@@ -31,7 +34,7 @@ if os.path.exists(f'{host_directory}/{output_file}'):
         data = json.load(f)
 else:
     data = {
-        "last_seen": "0",
+        "last_seen": 0,
     }
 
 data['weights'] = weights_file
