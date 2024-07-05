@@ -128,6 +128,7 @@ async def update_and_return_infra_data(available_clients: list) -> list:
         result = db_user.update_many(
             {"uid": {"$nin": [client['uid'] for client in available_clients]}, "status": "Online"},
             {"$set": {"status": "Offline",
+                      "tags": [],
                       "weights": "",
                       "client_ip": "",
                       "last_seen": ""
