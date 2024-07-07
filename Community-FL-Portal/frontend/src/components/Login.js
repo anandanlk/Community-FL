@@ -27,7 +27,7 @@ function Login() {
     return (
         <div className="container">
             <div className="welcome-message">
-                <h1>Welcome to Community-based Federated Learning Portal</h1>
+                <h1>Welcome to FedLearn - A Community-based Federated Learning Portal</h1>
             </div>
             <form onSubmit={handleLogin} className="form">
                 <h2>Login</h2>

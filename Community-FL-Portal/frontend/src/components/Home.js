@@ -33,7 +33,7 @@ function Home() {
     return (
         <div>
             <header className="header">
-                <h1>Community FL Portal - Home</h1>
+                <h1>FedLearn - Home</h1>
                 <div className="nav-links">
                     <button onClick={handleLogout} className="logout-button">Logout</button>
                 </div>
